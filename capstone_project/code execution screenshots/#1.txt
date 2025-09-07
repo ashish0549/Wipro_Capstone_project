@@ -1,0 +1,126 @@
+Started by user Uppununthala Ashish kumar
+Running as SYSTEM
+Building in workspace C:\Users\91961\.jenkins\workspace\capstone project
+[capstone project] $ cmd /c call C:\Users\91961\AppData\Local\Temp\jenkins2447756288477456845.bat
+
+C:\Users\91961\.jenkins\workspace\capstone project>cd C:\Users\91961\OneDrive\Desktop\java selenium\finalcapstoneproject 
+
+C:\Users\91961\OneDrive\Desktop\java selenium\finalcapstoneproject>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< finalcapstoneproject:browserstack >------------------
+[INFO] Building browserstack 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ browserstack ---
+[INFO] Deleting C:\Users\91961\OneDrive\Desktop\java selenium\finalcapstoneproject\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ browserstack ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ browserstack ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ browserstack ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 6 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ browserstack ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 8 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/91961/OneDrive/Desktop/java selenium/finalcapstoneproject/src/test/java/browserstack/Testrunner.java: C:\Users\91961\OneDrive\Desktop\java selenium\finalcapstoneproject\src\test\java\browserstack\Testrunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/91961/OneDrive/Desktop/java selenium/finalcapstoneproject/src/test/java/browserstack/Testrunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ browserstack ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running browserstack.Testrunner
+
+Scenario: Complete shopping journey for demouser # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/demouserTest.feature:4
+  ✔ Given User launches the browser              # browserstack.Demousersteps.user_launches_the_browser()
+  ✔ When User navigates to BStackDemo website    # browserstack.Demousersteps.user_navigates_to_bstackdemo_website()
+  ✔ And User logs in with demouser               # browserstack.Demousersteps.user_logs_in_with_demouser()
+  ✔ And User performs shopping flow with brands: # browserstack.Demousersteps.user_performs_shopping_flow_with_brands()
+  ✔ And User searches for "iPhone"               # browserstack.Demousersteps.user_searches_for(java.lang.String)
+  ✔ And Apply Low to High filter                 # browserstack.Demousersteps.apply_low_to_high_filter()
+  ✔ And Apply High to Low filter                 # browserstack.Demousersteps.apply_high_to_low_filter()
+  ✔ And User clicks Privacy Policy Read More     # browserstack.Demousersteps.user_clicks_privacy_policy_read_more()
+Privacy Policy Readmore button is clickable
+  ✔ And Privacy Policy page should open          # browserstack.Demousersteps.privacy_policy_page_should_open()
+  ✔ And User clicks Offers page                  # browserstack.Demousersteps.user_clicks_offers_page()
+✅ Offers page validated successfully
+  ✔ And Offers message should be validated       # browserstack.Demousersteps.offers_message_should_be_validated()
+  ✔ Then User logs out                           # browserstack.Demousersteps.user_logs_out()
+
+Scenario: Validate existing orders for existing_orders_user # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/exisiting.feature:3
+  ✔ Given User launches their browser                       # browserstack.Exisitingordersusers.user_launches_their_browser()
+  ✔ When User navigates to the BStackDemo Website           # browserstack.Exisitingordersusers.user_navigates_to_the_BStackDemo_Website()
+  ✔ And User logs in with existing_orders_user              # browserstack.Exisitingordersusers.user_logs_in_with_existing_user()
+✅ Orders are present for existing_orders_user.
+  ✔ And Open Orders and sees                                # browserstack.Exisitingordersusers.Open_Orders_and_sees()
+  ✔ Then User logs out of the site                          # browserstack.Exisitingordersusers.user_logs_out_of_the_site()
+
+Scenario: Validate favourites for fav_user     # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/favuser.feature:3
+  ✔ Given User launches the Browser            # browserstack.FavUsersSteps.user_launches_the_Browser()
+  ✔ When User navigates to the BStackDemo site # browserstack.FavUsersSteps.user_navigates_to_the_BStackDemo_site()
+  ✔ And User logs in with fav_user             # browserstack.FavUsersSteps.user_logs_in_with_fav_user()
+✅ Favourites checked for fav_user.
+  ✔ And Open Favourites and see items          # browserstack.FavUsersSteps.Open_Favourites_and_see_items()
+  ✔ Then User logs out of site                 # browserstack.FavUsersSteps.user_logs_out_of_site()
+
+Scenario: Validate login for image_not_loading_user # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/imageuser.feature:3
+  ✔ Given User launches Browser                     # browserstack.ImageUserssteps.user_launches_Browser()
+  ✔ When User navigates to BStackDemo Website       # browserstack.ImageUserssteps.user_navigates_to_Website()
+  ✔ And User logs in with image_not_loading_user    # browserstack.ImageUserssteps.user_logs_in_with_image_not_loading_user()
+✅ image_not_loading_user logged in successfully.
+  ✔ And Validate that user logged in successfully   # browserstack.ImageUserssteps.validate_login_success()
+  ✔ Then User will log out                          # browserstack.ImageUserssteps.user_will_log_out()
+
+Scenario: Validate locked account message      # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/locked.feature:3
+  ✔ Given User launches their Browser          # browserstack.LockedUserssteps.user_launches_their_Browser()
+  ✔ When User navigates to the BStackDEMO site # browserstack.LockedUserssteps.user_navigates_to_the_BStackDEMO_site()
+  ✔ And User logs in with locked_user          # browserstack.LockedUserssteps.user_logs_in_with_locked_user()
+✅ Locked user message validated.
+  ✔ Then Validate locked account message       # browserstack.LockedUserssteps.validate_locked_message()
+
+Scenario Outline: Complete shopping journey with login                                                                           # file:///C:/Users/91961/OneDrive/Desktop/java%20selenium/finalcapstoneproject/src/test/resources/features/login_continue.feature:26
+  ✔ Given User launches browser                                                                                                  # browserstack.BstackDemo.user_launches_browser()
+  ✔ When User navigates to BStackDemo site                                                                                       # browserstack.BstackDemo.user_navigates_to_site()
+  ✔ And User logs in with valid credentials                                                                                      # browserstack.BstackDemo.user_logs_in_with_valid_credentials()
+Login successful using valid credentials
+  ✔ And User should be logged in successfully                                                                                    # browserstack.BstackDemo.user_should_be_logged_in_successfully()
+  ✔ And User searches and adds first product to cart                                                                             # browserstack.BstackDemo.user_searches_and_adds_first_product_to_cart()
+Product successfully added to cart, deleted from cart and then again added to cart
+  ✔ And Product should be visible in cart                                                                                        # browserstack.BstackDemo.product_should_be_visible_in_cart()
+  ✔ And User proceeds to checkout                                                                                                # browserstack.BstackDemo.user_proceeds_to_checkout()
+Checkout page is displayed
+  ✔ And Checkout page should be displayed                                                                                        # browserstack.BstackDemo.checkout_page_should_be_displayed()
+  ✔ And User enters shipping details with firstname "Ashish", lastname "U", address "23/1 knl", state "TS", and pincode "501218" # browserstack.BstackDemo.user_enters_shipping_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+Shipping address saved
+  ✔ And Shipping address should be saved                                                                                         # browserstack.BstackDemo.shipping_address_should_be_saved()
+  ✔ And User downloads order receipt                                                                                             # browserstack.BstackDemo.user_downloads_order_receipt()
+Order receipt downloaded
+  ✔ And Order receipt should be downloaded                                                                                       # browserstack.BstackDemo.order_receipt_should_be_downloaded()
+  ✔ And User clicks Continue shopping                                                                                            # browserstack.BstackDemo.user_clicks_continue_shopping()
+Redirected back to shopping page
+  ✔ Then User should be redirected to shopping home page                                                                         # browserstack.BstackDemo.user_should_be_redirected_to_shopping_home_page()
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 238.4 s -- in browserstack.Testrunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:19 min
+[INFO] Finished at: 2025-09-07T21:43:47+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
